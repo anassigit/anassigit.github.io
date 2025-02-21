@@ -8,21 +8,21 @@ const Topbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header id='topbar' className='px-[31px] md:px-[62px] drop-shadow-sm md:drop-shadow-md flex items-center bg-white h-[62px] md:h-[72px] py-10 text-lg w-full fixed top-0 z-50 justify-between'>
+        <header id='topbar' className='px-[31px] md:px-[62px] drop-shadow-sm md:drop-shadow-md flex items-center bg-white h-[62px] md:h-[72px] py-10 text-lg w-full fixed -top-1 z-50 justify-between'>
             <a href={'/'}>
                 <img src={LG_Sinarmas_Logo_Vector} alt="LG Sinarmas" className="md:h-[32px]" />
             </a>
             <div className='hidden md:flex items-center'>
                 <div className="flex items-center gap-15 absolute" style={{ left: "41.5vw" }}>
-                    <Link to={'/'} className={currentLink === "/" ? " text-lgsm-red font-bold" : ""}>Home</Link>
-                    <Link to={'/business'} className={currentLink === "/business" ? " active" : ""}>Business</Link>
-                    <Link to={'/about'} className={currentLink === "/about" ? " active" : ""}>About Us</Link>
+                    <Link to={'/'} className={`hover:text-lgsm-red ${currentLink === "/" ? " text-lgsm-red font-bold" : ""}`}>Home</Link>
+                    <Link to={'/business'} className={`hover:text-lgsm-red ${currentLink === "/business" ? " text-lgsm-red font-bold" : ""}`}>Business</Link>
+                    <Link to={'/about'} className={`hover:text-lgsm-red ${currentLink === "/about" ? " text-lgsm-red font-bold" : ""}`}>About Us</Link>
                 </div>
-                <button className="text-lg rounded-full border-black border-1 px-5 py-2">
+                <button className="text-lg rounded-full border-black border-1 px-5 py-2 hover:text-white hover:bg-black duration-300 ease-in-out">
                     Contact Us
                 </button>
             </div>
-            <div className="md:hidden transition-transform duration-300 ease-in-out">
+            <div className="md:hidden">
                 <div
                     className={`transform transition-transform duration-300 ${isMenuOpen ? 'rotate-180' : 'rotate-0'}`}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}

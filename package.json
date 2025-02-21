@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://anassigit.github.io/anassigit.github.io/",
   "scripts": {
     "dev": "vite --port 8080",
     "build": "vite build",

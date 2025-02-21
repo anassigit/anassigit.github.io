@@ -1,4 +1,8 @@
 import React from 'react'
+
+import heroImgDesktop from '@/assets/hero-with-image-crop.avif'
+import heroImgMobile from '@/assets/hero-with-image-crop.avif'
+
 import LGCNSjoinvent from '@/assets/LGCNS-joinvent.avif'
 import joinvent from '@/assets/joinventimage.avif'
 import LGsinarmas from '@/assets/Sinarmas-joinvent.avif'
@@ -19,13 +23,13 @@ import { Card } from '@/components/ui/card'
 const Home: React.FC = () => {
   return (
     <>
-      <section id='heading' className={`md:bg-[url(src/assets/hero-with-image-crop.avif)] md:bg-cover bg-center md:h-[82vh] flex flex-col justify-center md:gap-[3vh] px-[28px] md:px-[3vw]`}>
+      <section id='heading' className={`md:bg-[url(${heroImgDesktop})] md:bg-cover bg-center md:h-[82vh] flex flex-col justify-center md:gap-[3vh] px-[28px] md:px-[3vw]`}>
         <div id='heading-left-text' className='md:w-[40vw] font-bold flex flex-col md:justify-center my-5'>
           <h2 className='text-xl md:text-[4vh] text-lgsm-red'>Innovation for a Better Future</h2>
           <h1 className='text-[3vh] md:text-[5vh]'>Digital Growth Partner LG Sinarmas Technology Solutions</h1>
         </div>
         <div className='md:hidden relative w-screen -ml-[28px]'>
-          <img src={'src/assets/hero-with-image-original.png'} />
+          <img src={heroImgMobile} />
         </div>
         <div className='flex flex-row md:size-fit size-full items-center py-8 px-[15px] md:px-0'>
           <div className='md:size-[22vh]'>

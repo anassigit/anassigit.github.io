@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "bun run build",
+    "deploy": "bunx gh-pages -d build"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.5",
@@ -15,6 +17,7 @@
     "@tailwindcss/vite": "^4.0.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

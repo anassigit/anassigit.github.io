@@ -136,7 +136,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-slate-900 to-black text-slate-100 font-sans">
       {/* Intro overlay (3 seconds) */}
-      <div ref={overlayRef} className="fixed inset-0 bg-gradient-to-br from-gray-950 to-gray-600 flex items-center justify-center z-50 opacity-0 scale-95">
+      <div ref={overlayRef} className="fixed inset-0 bg-gradient-to-br from-gray-950 to-gray-600 flex items-center justify-center z-50 opacity-1">
         <div className="text-center space-y-3">
           <img src={image} alt="logo" className="w-28 h-28 rounded-full mx-auto border-4 border-white/20 shadow-lg object-cover" />
           <h1 className="text-3xl font-semibold">Annas Sigit — Portfolio</h1>
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
           <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-sm font-medium">AS</div>
           <div>
             <div className="text-sm font-semibold">Annas Sigit</div>
-            <div className="text-xs opacity-70">.NET/Java Developer — Smart Factory & Frontend</div>
+            <div className="text-xs opacity-70">.NET/Java Developer — Fullstack</div>
           </div>
         </div>
         <nav className="hidden md:flex gap-6 text-sm opacity-90">
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
         {/* Hero */}
         <section ref={heroRef} className="mt-8 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="text-indigo-400">Annas</span> — building reliable enterprise apps and elegant frontends.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm <span className="text-indigo-400">Annas</span> — building reliable enterprise and functional apps.</h2>
             <p className="text-lg opacity-80">Currently working on Recipe Management Systems for smart factories and rebuilding company frontends using React. I build SSO, Payroll modules, DMLS, and more.</p>
             <div className="flex gap-3">
               <a href="#projects" className="px-5 py-2 rounded-md bg-indigo-500/90 text-white text-sm font-medium shadow hover:brightness-105">See projects</a>
